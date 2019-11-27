@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Cửa hàng đồ dùng cho trẻ em</h1>
+    <h3>Mời các bạn chọn món đồ muốn mua:</h3>
+    <img src="menu\Birdthday.JPG" alt=""usemap="#menu"id="menu">
+    <map name="menu">
+        <area shape="poly" 
+        coords="110,203,149,206,194,204,227,219,217,241,198,232,198,255,136,259,130,234,107,221" href="ao.html" alt="ao"
+        onmouseover="DoiHinh('menu\\Birdthday_Ao.JPG')" onmouseout="KhoiPhuc()">
+        <area shape="poly" 
+        coords="279,87,252,44,256,17,279,3,283,1,300,8,311,21,314,40,286,87" href="dochoi.html" alt="dochoi"
+        onmouseover="DoiHinh('menu\\Birdthday_Bong.JPG')" onmouseout="KhoiPhuc()">
+        <area shape="poly"
+         coords="164,282,130,285,128,278,137,270,166,278,198,271,201,277,197,282" href="giay.html" alt="giay"
+         onmouseover="DoiHinh('menu\\Birdthday_Giay.JPG')" onmouseout="KhoiPhuc()">
+        <area shape="poly"
+         coords="116,74,149,58,109,5" href="mu.html" alt="mu"
+         onmouseover="DoiHinh('menu\\Birdthday_Mu.JPG')" onmouseout="KhoiPhuc()">
+        <area shape="poly" 
+        coords="138,261,196,256,194,270,166,278,140,270" href="quan.html" alt="quan"
+        onmouseover="DoiHinh('menu\\Birdthday_Quan.JPG')" onmouseout="KhoiPhuc()">
+    </map>
+    <script type="text/javascript">
+        function DoiHinh(hinh){
+            document.getElementById("menu").src = hinh;
+        }
+        function KhoiPhuc(){
+            document.getElementById("menu").src = "menu\\Birdthday.JPG";
+        }
+    </script>
+</body>
+</html>
